@@ -76,11 +76,17 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.5)
       public_suffix (>= 2.0.2, < 6.0)
+    autoprefixer-rails (10.4.15.0)
+      execjs (~> 2)
     base64 (0.1.1)
     bigdecimal (3.1.4)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    bootstrap (5.3.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 2.11.8, < 3)
+      sassc-rails (>= 2.0.0)
     builder (3.2.4)
     capybara (3.39.2)
       addressable
@@ -101,6 +107,8 @@ GEM
     drb (2.1.1)
       ruby2_keywords
     erubi (1.12.0)
+    execjs (2.9.1)
+    ffi (1.16.3)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -115,6 +123,8 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    libv8-node (18.16.0.0-x86_64-darwin)
+    libv8-node (18.16.0.0-x86_64-linux)
     loofah (2.21.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -126,6 +136,8 @@ GEM
     marcel (1.0.2)
     matrix (0.4.2)
     mini_mime (1.1.5)
+    mini_racer (0.8.0)
+      libv8-node (~> 18.16.0.0)
     minitest (5.20.0)
     msgpack (1.7.2)
     mutex_m (0.1.2)
@@ -143,6 +155,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
+    popper_js (2.11.8)
     psych (5.1.0)
       stringio
     public_suffix (5.0.3)
@@ -195,6 +208,14 @@ GEM
     rexml (3.2.6)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
+    sassc-rails (2.1.2)
+      railties (>= 4.0.0)
+      sassc (>= 2.0)
+      sprockets (> 3.0)
+      sprockets-rails
+      tilt
     selenium-webdriver (4.13.1)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -212,6 +233,7 @@ GEM
       railties (>= 6.0.0)
     stringio (3.0.8)
     thor (1.2.2)
+    tilt (2.3.0)
     timeout (0.4.0)
     turbo-rails (1.4.0)
       actionpack (>= 6.0.0)
@@ -239,12 +261,15 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bootstrap
   capybara
   debug
   importmap-rails
   jbuilder
+  mini_racer
   puma (>= 5.0)
   rails (~> 7.1.0)
+  sassc-rails
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
