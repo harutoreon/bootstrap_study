@@ -4,4 +4,7 @@ class FormsController < ApplicationController
 
   def select
   end
+
+  def checkbox_and_radio
+  end
 end
