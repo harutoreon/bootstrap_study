@@ -7,4 +7,7 @@ class FormsController < ApplicationController
 
   def checkbox_and_radio
   end
+
+  def range
+  end
 end
