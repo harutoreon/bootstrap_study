@@ -10,4 +10,7 @@ class FormsController < ApplicationController
 
   def range
   end
+
+  def input_group
+  end
 end
