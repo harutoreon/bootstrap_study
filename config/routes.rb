@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get '/checkbox_and_radio', to: 'forms#checkbox_and_radio'
   get '/range',              to: 'forms#range'
   get '/input_group',        to: 'forms#input_group'
+  get '/floating_labels',    to: 'forms#floating_labels'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
