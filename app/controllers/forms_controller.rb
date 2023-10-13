@@ -13,4 +13,10 @@ class FormsController < ApplicationController
 
   def input_group
   end
+
+  def floating_labels
+  end
+
+  def floating_labels
+  end
 end
