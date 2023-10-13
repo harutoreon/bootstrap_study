@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   get '/range',              to: 'forms#range'
   get '/input_group',        to: 'forms#input_group'
   get '/floating_labels',    to: 'forms#floating_labels'
-
+  get '/layout',             to: 'forms#layout'
+  
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

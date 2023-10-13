@@ -19,4 +19,7 @@ class FormsController < ApplicationController
 
   def floating_labels
   end
+
+  def layout
+  end
 end
