@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get '/container',     to: 'containers#container'
+
   get '/form_control',       to: 'forms#form_control'
   get '/select',             to: 'forms#select'
   get '/checkbox_and_radio', to: 'forms#checkbox_and_radio'
@@ -6,7 +8,7 @@ Rails.application.routes.draw do
   get '/input_group',        to: 'forms#input_group'
   get '/floating_labels',    to: 'forms#floating_labels'
   get '/layout',             to: 'forms#layout'
-  
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
