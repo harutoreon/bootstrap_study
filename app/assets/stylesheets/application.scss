@@ -1,2 +1,32 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+.container {
+  background-color: chartreuse;
+  text-align: center;
+}
+
+.container-sm {
+  background-color: chocolate;
+  text-align: center;
+}
+
+.container-md {
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+.container-lg {
+  background-color: darkkhaki;
+  text-align: center;
+}
+
+.container-xl {
+  background-color: darksalmon;
+  text-align: center;
+}
+
+.container-xxl {
+  background-color: crimson;
+  text-align: center;
+}
