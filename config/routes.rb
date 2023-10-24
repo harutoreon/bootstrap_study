@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get '/container',     to: 'containers#container'
-
+  get '/container',          to: 'containers#container'
+  get '/grid',               to: 'grids#grid'
+  
   get '/form_control',       to: 'forms#form_control'
   get '/select',             to: 'forms#select'
   get '/checkbox_and_radio', to: 'forms#checkbox_and_radio'
