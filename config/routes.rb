@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get '/container',          to: 'containers#container'
   get '/grid',               to: 'grids#grid'
-  
+
   get '/form_control',       to: 'forms#form_control'
   get '/select',             to: 'forms#select'
   get '/checkbox_and_radio', to: 'forms#checkbox_and_radio'
@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get '/input_group',        to: 'forms#input_group'
   get '/floating_labels',    to: 'forms#floating_labels'
   get '/layout',             to: 'forms#layout'
+
+  get '/flex', to: 'flexs#flex'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
