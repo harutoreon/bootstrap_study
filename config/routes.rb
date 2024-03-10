@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/layout',             to: 'forms#layout'
 
   get '/flex', to: 'flexs#flex'
+  get '/border', to: 'borders#border'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
