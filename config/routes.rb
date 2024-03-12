@@ -12,6 +12,7 @@ Rails.application.routes.draw do
 
   get '/flex', to: 'flexs#flex'
   get '/border', to: 'borders#border'
+  get '/card', to: 'cards#card'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
