@@ -395,3 +395,38 @@
   <div class="card-footer bg-transparent border-success">Footer</div>
 </div>
 
+<!-- メインメニューのレイアウト-->
+<div class="container w-50">
+  <div class="row mb-5">
+    <div class="col">
+      <div class="card pt-2" style="width: 18rem;">
+        <%= image_tag 'experiment.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
+        <div class="card-body">
+          <h5 class="card-title">Search by treatment</h5>
+          <p class="card-text">Enter a surface treatment name to search for a treatment.</p>
+          <a href="#" class="card-link">Go to search page</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card pt-2" style="width: 18rem;">
+        <%= image_tag 'category.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
+        <div class="card-body">
+          <h5 class="card-title">Search by category</h5>
+          <p class="card-text">Search for a process by selecting a category from the drop-down list.</p>
+          <a href="#" class="card-link">Go to search page</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card pt-2" style="width: 18rem;">
+        <%= image_tag 'factory.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
+        <div class="card-body">
+          <h5 class="card-title">Search by maker</h5>
+          <p class="card-text">Enter the name of the maker to search for a treatment.</p>
+          <a href="#" class="card-link">Go to search page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
