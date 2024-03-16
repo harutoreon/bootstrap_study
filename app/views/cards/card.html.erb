@@ -405,6 +405,7 @@
 
 <!-- メインメニューのレイアウト-->
 <div class="container w-50 mb-5">
+  <h3 class="text-center mb-5">Main Menu</h3>
   <div class="row mb-4">
     <div class="col">
       <div class="card pt-2" style="width: 18rem;">
@@ -484,7 +485,7 @@
     </div>
     <div class="col">
       <div class="card pt-2" style="width: 18rem;">
-        <%= image_tag 'users_management.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
+        <%= image_tag 'person_add.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
         <div class="card-body">
           <h5 class="card-title">User management</h5>
           <p class="card-text">Manage information about users in one place.</p>
@@ -579,3 +580,64 @@
     </li>
   </div>
 </div>
+
+<!-- 登録・編集フォーム-->
+<nav class="navbar bg-body-tertiary border-bottom mb-5">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="#">Surface Treatment Manager</a>
+  </div>
+</nav>
+
+<div class="container w-50 mb-5">
+  <h3 class="text-center mb-5">Registration of Surface Treatment</h3>
+
+  <div class="mb-4">
+    <label class="form-label">Name</label>
+    <input type="text" class="form-control">
+  </div>
+
+  <div class="mb-4">
+    <label class="form-label">Category</label>
+    <select class="form-select">
+      <option></option>
+      <option>plating</option>
+      <option>anodic oxidation</option>
+      <option>chemical</option>
+      <option>coating</option>
+      <option>surface hardening</option>
+    </select>
+  </div>
+
+  <div class="mb-4">
+    <label class="form-label">Color</label>
+    <input type="text" class="form-control">
+  </div>
+
+  <div class="mb-4">
+    <label class="form-label">Maker</label>
+    <input type="text" class="form-control">
+  </div>
+
+  <div class="mb-4">
+    <label for="formFile" class="form-label">Picture</label>
+    <div><%= image_tag '', alt: 'No Image', class: 'mb-3', id: 'preview_image', width: 250, height: 250 %></div>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+
+  <div>
+    <button type="submit" class="col-12 btn btn-primary">Create</button>
+  </div>
+</div>
+
+<script class="text/javascript">
+  document.getElementById('formFile').addEventListener('change', function() {
+    let file = this.files[0];
+    if (file) {
+      let reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById('preview_image').setAttribute('src', e.target.result);
+      }
+      reader.readAsDataURL(file);
+    }
+  });
+</script>
