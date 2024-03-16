@@ -395,8 +395,16 @@
   <div class="card-footer bg-transparent border-success">Footer</div>
 </div>
 
+<!-- ヘッダーのレイアウト -->
+<nav class="navbar bg-body-tertiary border-bottom mb-5">
+  <div class="container justify-content-center">
+    <a class="navbar-brand" href="#">Surface Treatment Manager</a>
+    <%# <a class="nav-link" href="#">Log out</a> %>
+  </div>
+</nav>
+
 <!-- メインメニューのレイアウト-->
-<div class="container w-50">
+<div class="container w-50 mb-5">
   <div class="row mb-4">
     <div class="col">
       <div class="card pt-2" style="width: 18rem;">
@@ -413,7 +421,7 @@
         <%= image_tag 'category.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
         <div class="card-body">
           <h5 class="card-title">Search by category</h5>
-          <p class="card-text">Select a category from the list to search for surface treatments.</p>
+          <p class="card-text">Select a category to search for surface treatments.</p>
           <a href="#" class="card-link">Go to search page</a>
         </div>
       </div>
@@ -445,8 +453,8 @@
       <div class="card pt-2" style="width: 18rem;">
         <%= image_tag 'library_add.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
         <div class="card-body">
-          <h5 class="card-title">Register a new treatment</h5>
-          <p class="card-text">Register new surface preparation information.</p>
+          <h5 class="card-title">Treatment management</h5>
+          <p class="card-text">Manage surface preparation information in one place.</p>
           <a href="#" class="card-link">Go to registration page</a>
         </div>
       </div>
@@ -466,11 +474,31 @@
   <div class="row mb-4">
     <div class="col">
       <div class="card pt-2" style="width: 18rem;">
+        <%= image_tag 'domain_add.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
+        <div class="card-body">
+          <h5 class="card-title">Maker management</h5>
+          <p class="card-text">Manage manufacturers' information in one place.</p>
+          <a href="#" class="card-link">Go to management page</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card pt-2" style="width: 18rem;">
         <%= image_tag 'users_management.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
         <div class="card-body">
           <h5 class="card-title">User management</h5>
           <p class="card-text">Manage information about users in one place.</p>
           <a href="#" class="card-link">Go to management page</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card pt-2" style="width: 18rem;">
+        <%= image_tag 'application_settings.svg', alt: 'sample image', class: 'card-img-top w-25', width: 50, height: 50 %>
+        <div class="card-body">
+          <h5 class="card-title">Application settings</h5>
+          <p class="card-text">Basic application settings and logout.</p>
+          <a href="#" class="card-link">Go to setting page</a>
         </div>
       </div>
     </div>
