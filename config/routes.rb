@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'paginations/size_adjustment'
+
   get '/container',          to: 'containers#container'
   get '/grid',               to: 'grids#grid'
 
